@@ -1,0 +1,310 @@
+body{
+    background-color: white;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+#nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #0D0D0D;
+    width: 100vw;
+}
+
+.fleks{
+    float: right;
+    margin-right: 200px;
+}
+.fleks2{
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    width: 500px;
+}
+.fleks3{
+    margin-top: 100px;
+    float: right;
+    width: 500px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+.arrow span{
+    align-self: center;
+    rotate: 45deg;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    margin: -5px;
+}
+.arrow:hover{
+    animation: scroll 2s;
+    animation-iteration-count: 3;
+}
+
+
+@keyframes scroll {
+    0%{
+        opacity: 1;
+        transform:translate(0px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0px, 50px);
+    }
+}
+
+
+.lewo{
+    border-radius: 149px 150px 150px 150px;
+    float: left;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: 700;
+    float: left;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+.prawo{
+    border-radius: 149px 150px 150px 150px;
+    float: right;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+    float: right;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.container1{
+    float: left;
+    border-radius: 21px 21px 21px 21px;
+    background-color: #041C63;
+    padding: 10px;
+    border: 1px solid black;
+    width: 380px;
+    height: 400px;
+    text-align: center;
+    box-shadow: inset;
+    -webkit-box-shadow: 11px -13px 100px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 11px -13px 100px 0px rgba(0, 0, 0, 1);
+    box-shadow: 11px -13px 100px 0px rgba(0, 0, 0, 1);
+}
+.week{
+    color: #DBDBDB;
+    font-size:12px;
+    font-weight: 500;
+    padding-right: 12px;
+}
+.nowa2{
+    color: #DBDBDB;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 10px;
+}
+.nowa2:hover{
+    border-radius: 0%;
+    background-color: #4C71DF;
+    cursor: pointer;
+}
+.kalendarz_tytul{
+    width: 380px;
+    height: 40px;
+    text-align: center;
+}
+.data{
+    color: #DBDBDB;
+    font-size: 23px;
+}
+.napis_glowny{
+    -webkit-box-shadow: -4px -1px 33px 8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -4px -1px 33px 8px rgba(0, 0, 0, 1);
+    box-shadow: -4px -1px 33px 8px rgba(0, 0, 0, 1);
+}
+.mid{
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tekst{
+    letter-spacing: 1px;
+    text-align: justify;
+}
+.cytat{
+    font-style: oblique;
+    padding: 50px;
+    text-justify: auto;
+    text-align: center;
+    word-spacing: 5px;
+    font-size: 20px;
+    color: #202022;
+}
+.napisek{
+    background-color: #1f2020;
+    -webkit-box-shadow: 1px 8px 46px 25px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 8px 46px 25px rgba(66, 68, 90, 1);
+    box-shadow: 1px 8px 46px 25px rgba(66, 68, 90, 1);
+}
+
+.czcionka{
+    font-weight: 700;
+}
+.centerr{
+    text-align: center;
+}
+.lewoo{
+    text-align: left;
+}
+.prawoo{
+    display: block;
+    float: right;
+}
+a.my-button{
+    font-size: 20px;
+    background-color: #00747C;
+    color: #CACACA;
+    padding: 15px;
+    text-decoration: none;
+}
+a.my-button:hover{
+    color: #FFFFFF; 
+    border: 2px solid black;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
+.glowny{
+    font-weight: 700;
+    text-align: center;
+}
+
+.obrazy{
+    position: relative;
+}
+#love:hover + .napis_love {
+    display: flex;
+}
+
+#love:hover {
+    opacity: 0.3;
+    border: 5px solid white;
+}
+
+.napis_love:hover{
+    display: flex;
+}
+
+.napis_love {
+    display: none;
+    position: absolute;
+    font-size: 40px;   
+    top: 150px;
+    margin-left: 10%;
+    color: #fff;
+}
+
+
+.obrazy:hover .napis_namiot,
+.obrazy:hover .napis_love,
+.obrazy:hover .napis_dmuchaniec {
+    display: block;
+}
+
+
+.obrazy:hover #namiot,
+.obrazy:hover #love,
+.obrazy:hover #dmuchaniec {
+    opacity: 0.3;
+    border: 5px solid white;
+}
+
+.napis_namiot{
+    display: none;
+    position: absolute;
+    font-size: 40px;   
+    top: 150px;
+    margin-left: 10%;
+    color: #fff;
+}
+
+
+#dmuchaniec:hover + .napis_dmuchaniec{
+    display: block;
+}
+
+#dmuchaniec:hover {
+    opacity: 0.3;
+    border: 5px solid white;
+}
+
+
+.napis_dmuchaniec:hover{
+    display: flex;
+}
+
+.napis_dmuchaniec{
+    display: none;
+    position: absolute;
+    top: 150px;
+    margin-left: 10%;
+    font-size: 40px;
+    color: #fff;
+}
+
+.napis_cos{
+    position: absolute;
+    top: 450px;
+    margin-left:900px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.calendar{
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calendar tr{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.obok > tbody > tr > td {
+    padding: 5px;
+}
+
+.obok > tbody > tr{
+    text-align: center;
+    padding: 5px;
+}
+
+.obok{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #CACACA;
+}
+
+
+
